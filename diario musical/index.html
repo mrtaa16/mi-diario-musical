@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi diario musical</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Mi diario musical 🎧</h1>
+        <p>Mi colección personal de música.</p>
+    </header>
+
+    <main>
+        <section class="estadisticas">
+            <h2>Mi colección</h2>
+            <div id="estadisticas"></div>
+        </section>
+
+        <section class="formulario">
+            <h2>Añadir un álbum</h2>
+
+            <input id="artista" type="text" placeholder="Nombre del artista">
+            <input id="album" type="text" placeholder="Nombre del álbum">
+            <input id="portada" type="text" placeholder="Enlace de la portada (opcional)">
+            <textarea id="canciones" placeholder="Escribe las canciones, una por línea"></textarea>
+
+            <button id="anadir">Añadir álbum</button>
+        </section>
+
+        <section class="copias">
+            <h2>Copia de seguridad</h2>
+            <button id="exportar">Guardar mi colección</button>
+            <button id="importar">Recuperar mi colección</button>
+            <input id="archivo" type="file" accept=".json" hidden>
+        </section>
+
+        <section>
+            <h2>Mi biblioteca</h2>
+            <input id="buscador" type="text" placeholder="Buscar álbum o artista...">
+            <div id="biblioteca"></div>
+        </section>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
